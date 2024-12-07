@@ -1,0 +1,79 @@
+/*
+    (c) 2024 kanaaa224. All rights reserved.
+*/
+
+@import 'https://cdn.jsdelivr.net/gh/kanaaa224/web-common@master/web-app-sources/global-layout-1-with-style-1.css';
+
+html {
+    body {
+        main {
+            article {
+                section {
+                    flex-direction: row; justify-content: space-between; align-items: center;
+
+                    p {
+                        opacity: .5;
+                    }
+
+                    button {
+                        inline-size: fit-content; padding: .25rem 1rem;
+
+                        border-radius: .25rem;
+
+                        background-color: #0000000d;
+
+                        @media (prefers-color-scheme: dark) {
+                            background-color: #ffffff0d;
+                        }
+
+                        &:hover {
+                            opacity: .75;
+
+                            cursor: pointer;
+                        }
+                    }
+
+                    div {
+                        position: relative;
+
+                        inline-size: 100%;
+
+                        display: inherit; justify-content: center;
+
+                        video, canvas {
+                            max-inline-size: 50rem; inline-size: inherit;
+
+                            aspect-ratio: 16 / 9;
+                        }
+
+                        canvas {
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+
+        header {
+            flex-direction: row; justify-content: space-between; align-items: center;
+
+            p {
+                opacity: .5;
+
+                span.mdi {
+                    font-size: 1.5rem;
+                }
+            }
+
+            div {
+                gap: 2rem;
+
+                display: inherit;
+
+                @media (width < 1000px) {
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}
