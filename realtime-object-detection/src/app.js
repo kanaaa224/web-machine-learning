@@ -2,7 +2,7 @@ import * as consts from './consts.js';
 import * as api    from './api.js';
 import * as utils  from './utils.js';
 
-import ml5 from 'https://cdn.jsdelivr.net/npm/ml5@1.2.1/+esm';
+import ml5 from 'https://cdn.jsdelivr.net/npm/ml5@1.3.1/+esm';
 
 export default class App {
     constructor() {
